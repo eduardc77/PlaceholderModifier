@@ -21,6 +21,7 @@
 
 ## Description
 A view modifier that applies an animated shimmering placeholder effect to any view, typically to show that an operation is in progress.
+
 The modifier is using the native '.redacted(reason: .placeholder)' modifier.
 
 ## Built with:
