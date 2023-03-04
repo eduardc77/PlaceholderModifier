@@ -15,9 +15,6 @@
 
 <p align="left">
 	<img src="./Preview/iphone-preview.gif" width="260" height="500"/>
-</p>
-
-<p align="left">
 	<img src="./Preview/iphone-preview-darkmode.gif" width="260" height="500"/>
 </p>
 
