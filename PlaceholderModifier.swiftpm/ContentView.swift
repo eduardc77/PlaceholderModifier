@@ -32,19 +32,11 @@ struct ContentView: View {
 			.padding(.horizontal)
 		}
 		.safeAreaInset(edge: .bottom) {
-			Button(action: {
-				Task {
-					placeholder = true
-					try? await Task.sleep(nanoseconds: 6_000_000_000)
-					placeholder = false
-				}
-			}, label: {
-				Text("Async Task")
-					.frame(maxWidth: .infinity, maxHeight: 40)
-			})
-			.tint(.teal)
-			.buttonStyle(.borderedProminent)
+			AsyncButton("Async Task") {
+				placeholder = true
+				try? await Task.sleep(nanoseconds: 6_000_000_000)
+				placeholder = false
+			}
 			.padding(.horizontal)
-		}
-	}
+		}	}
 }
